@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+		<title>Trivia Dev</title>
+	</head>
+	<body>
+			<section class="secInicio" id="secInicio">
+				<img src="img/portada.svg">
+				<h1>Trivia Dev</h1>
+				<p>¿Cual es tu nombre?</p>
+				<input type="text" name="" id="name" placeholder="Escribe tu nombre">
+				<button id='btnInicio' class="btn btnCurve"></button>
+			</section>
+
+			<section class="secBienvenida" id="secBienvenida">
+				<img src="img/portada.svg">
+				<p>¡Hey, <strong id="nameShow"></strong>! <br>Bienvenida a Trivia Dev.</p>
+				<p>¿Lista para empezar? <br> Elige una opción:</p>
+				
+				<div class="secBox">
+					<div id="triviaM">
+						<img src="img/opcionUno.svg">
+						<p>Mujeres en programación</p>
+					</div>
+					<div id="triviaP">
+						<img src="img/opcionDos.svg">
+						<p>Lenguajes de Programación</p>
+					</div>
+				</div>
+				<!-- <button class="btn btnCurve" id="btnInicio"></button> -->
+			</section>
+
+		<!-- Preguntas de Mujeres en programación -->
+			
+		  <section id="secPreguntaM" class="secPregunta" >
+					
+				<p> ¿Quien invento el Wifi?</p>
+					<div class="boxPreguntas">
+						<p><span>A. </span>Thomas Edison</p>
+						<p id="btnMUno"><span>B. </span>Hedwig Eva Maria Kiesler</p>
+						<p><span>C. </span>Elon Musk</p>
+					</div>
+				
+				<p>¿Quien fue la primera mujer programadora?</p>
+				<div class="boxPreguntas">
+					<p><span>A. </span>Radia Joy Perlman</p>
+					<p  ><span>B. </span>Margaret Hamilton</p>
+					<p id="btnMDos"><span>C. </span>Ada Lovelace</p>
+
+				</div>
+				<p>¿En que año llego la primera mujer a la luna?</p>
+				<div class="boxPreguntas">
+					<p id="btnMTres"><span>A. </span>Aun no.</p>
+					<p><span>B. </span>2007</p>
+					<p><span>C. </span>2019</p>
+
+				</div>
+				<div class="btn btnCurve" id="btnPreguntaM"></div>
+			</section>
+
+
+			<!-- Preguntas de lenguajes de programacion -->
+			<section id="secPreguntaP" class="secPregunta" >
+					
+				<p>Frontend es la parte que se conecta con la base de datos y el servidor que utiliza dicho sitio web.</p>
+					<div class="boxPreguntas">
+						<p id="btnPUno"><span>A. </span>Falso</p>
+						<p><span>B. </span>Verdadero</p>	
+					</div>
+				
+				<p>¿Cual de las siguientes palabras no es un lenguaje de programacion?</p>
+				<div class="boxPreguntas">
+					<p><span>A. </span>Ruby</p>
+					<p><span>B. </span>Php</p>
+					<p><span>C. </span>JavaScript</p>
+					<p id="btnPDos"><span>D. </span>Html</p>
+
+				</div>
+				<p>¿cuales de las siguientes extensiones corresponde a un archivo javascript?</p>
+				<div class="boxPreguntas">
+					<p><span>A. </span>.jas</p>
+					<p><span>B. </span>.jv</p>
+					<p id="btnPTres"><span>C. </span>.js</p>
+
+				</div>
+				<div class="btn btnCurve" id="btnPreguntaP"></div>
+			</section>
+			<section id="secRespuestas" class="secRespuestas">
+				<p id="correctas"></p>
+				<p id="incorrectas"></p>
+				<div class="btn" id="volver" onclick="queHacer(0)"></div>
+				<div class="btn" id="salir" onclick="queHacer(1)"></div>
+			</section>
+			<section id="bye" class="secBye"></section>
+
+	  <script src="app.js"></script>
+  </body>
+</html>

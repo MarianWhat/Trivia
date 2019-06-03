@@ -1,0 +1,182 @@
+/*
+Name: Trivia Dev 
+Author: Liliana, Marrian
+Description: Desarrollado en Laboratoria, Pre-AdmisiÃƒÆ’Ã‚Â³n
+Version: 1.0
+Fecha:9/5/2019
+*/
+
+/*GENERAL-----------------------------------------*/
+*{border: 0;margin: 0;padding: 0;color: inherit;text-decoration: none;list-style-type: none;position: relative;-webkit-box-sizing: border-box;box-sizing: border-box;}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input, a{
+  outline: none;
+}
+.btn{
+   border-radius: 36px;
+  
+   transition: 0.4s;
+   width: 39px;
+   height: 40px;
+   box-shadow: 0px 0px 9px -3px #0000009e;
+   position: absolute;
+   outline:none;
+   cursor: pointer;
+   
+   background-size: 22px;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.btn:hover{
+  transform: scale(1.1);
+}
+
+.btnCurve{
+  background-image: url(./img/seguir.svg);
+   bottom: 40px;
+   right: 80px;
+    background-color: rgb(255, 209, 92);
+}
+
+
+body {
+    background-color: #f7f7f7;
+    color: #ffffff;
+}
+
+section{
+  background-color: #57d2ff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  padding: 45px 92px;
+  display:none;
+}
+section img{  
+margin-bottom: 20px;
+}
+.secInicio{
+  display:flex;
+}
+img{
+    width: 100px;
+}
+h1{
+    margin-bottom: 45px;
+}
+
+/* Inicio*/
+.secInicio p{margin-bottom: 7px;}
+.secInicio input{
+    border-radius: 25px;
+    border: 1px solid gainsboro;
+    padding: 9px;
+    width: 222px;
+    display: block;
+    color: black;
+}
+.secInicio .btn{}
+
+/*///////*/
+
+.secBienvenida p{text-align: center;font-size: 18px;margin-bottom: 30px;}
+.secBienvenida p + p{
+
+margin-bottom: 17px;
+
+font-size: 16px;
+}
+.secBienvenida p strong{}
+.secBienvenida img{}
+.secBienvenida .secBox{
+    display: flex;
+}
+.secBienvenida .secBox div{
+    box-shadow: 0px 0px 6px -2px #909090;
+    width: 130px;
+    margin: 0 8px;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.secBienvenida .secBox div:hover{
+  transform: scale(1.1);
+}
+.secBienvenida .secBox div img{}
+.secBienvenida .secBox div p{
+     text-align: center;
+     font-size: 12px;
+     margin: 0;
+     color: #2d2d2d;
+}
+.secBienvenida .btn{}
+
+
+#secMujer{display: none;}
+.secPregunta{
+    padding: 42px 63px;
+}
+.secPregunta p{
+    font-size: 14px;
+    text-align: center;
+    max-width: 245px;
+}
+.secPregunta img{}
+.secPregunta .boxPreguntas{
+    margin-bottom: 20px;
+}
+.secPregunta .boxPreguntas p{
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    padding: 9px 18px;
+    border: 1px solid #d2d2d2;
+    margin: 9px 0px;
+    cursor: pointer;
+}
+.secPregunta .boxPreguntas p:hover{
+
+background-color: #ffd15c;
+
+color: white;
+}
+.secPregunta .boxPreguntas p:hover span{
+color: white;
+}
+
+.secPregunta .boxPreguntas p span{
+    color: #ffbe18;
+}
+/*Seccion de respuesta:*/
+.secRespuestas{}
+.secRespuestas .btn{
+    bottom: 30px;
+}
+.secRespuestas #volver{
+    left: 60px;
+    background-color: rgb(255, 209, 92);
+}
+.secRespuestas #salir{
+    right: 60px;
+    background-color: #242424;
+}
+
+
+
+
+
+
+
+
